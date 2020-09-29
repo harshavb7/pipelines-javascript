@@ -28,7 +28,7 @@ steps:
     testRunner: JUnit
     testResultsFiles: '**/TEST-RESULTS.xml'
   
- - task: PublishCodeCoverageResults@1
+- task: PublishCodeCoverageResults@1
   inputs: 
     codeCoverageTool: Cobertura # or JaCoCo
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
